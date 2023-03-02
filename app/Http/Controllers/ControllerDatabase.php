@@ -9,8 +9,13 @@ class ControllerDatabase extends Controller
 {
     public function index(){
         $valori = Movie::all();
-        dd($valori);
-        return  view('home');
+        
+        
+
+        
+
+        
+        return  view('home',compact('valori'));
 
     }
 
